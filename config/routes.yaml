@@ -1,0 +1,65 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
+
+index:
+    path: /
+    controller: App\Controller\TransactionsController::detail
+
+#user
+user_singup:
+    path: /user/singup
+    controller: App\Controller\UserController::singup
+    methods:  [POST]
+
+user_login:
+    path: /user/login
+    controller: App\Controller\UserController::login
+    methods:  [POST]
+
+user_logout:
+    path: /user/logout
+    controller: App\Controller\UserController::logout
+    methods: [POST]
+
+user_forgot_password:
+    path: /user/forgot
+    controller: App\Controller\UserController::forgotPassword
+
+#Portefeuille
+portefeuille_detail:
+    path: /portefeuille/detail
+    controller: App\Controller\PortefeuilleController::detail
+    methods: [GET]
+
+portefeuille_debiter:
+    path: /portefeuille/debiter
+    controller: App\Controller\PortefeuilleController::debiter
+    methods: [POST]
+
+portefeuille_crediter:
+    path: /portefeuille/crediter
+    controller: App\Controller\PortefeuilleController::crediter
+    methods: [POST]
+
+
+#transaction
+transaction_lists:
+    path: /transaction/lists
+    controller: App\Controller\TransactionsController::lists
+    methods: [POST]
+
+transaction_detail:
+    path: /transaction/detail
+    controller: App\Controller\TransactionsController::detail
+    methods: [GET]
+
+#commerce admin support data
+commerce_create:
+    path: /commerce/create
+    controller: App\Controller\CommerceController::create
+    methods: [POST]

@@ -1,9 +1,10 @@
 # lesHabituesApi
 
-1. toutes routes dans le fiche route.yaml
-2. utilise md5 avec salt cryptles le mot de passe
-3. utilise session et cookies dans le user model
-4. soumettre des données avec formType
-5. utilise phpunit pour le test
-6. le projet dans le branch master
+1. Toutes les routes dans le fichier route.yaml
+2. Crypter le mot de passe avec md5 et sel
+3. Utiliser des sessions et des cookies dans le modèle utilisateur
+4. Soumettre les données avec formType
+5. Testez avec phpunit
+6. Ce projet est dans la branche master
+7. Ce projet utilise également mysql, mais c'est exactement la même chose que progresql
  

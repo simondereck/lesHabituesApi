@@ -5,4 +5,5 @@
 3. utilise session et cookies dans le user model
 4. soumettre des données avec formType
 5. utilise phpunit pour le test
+6. le projet dans le branch master
  
